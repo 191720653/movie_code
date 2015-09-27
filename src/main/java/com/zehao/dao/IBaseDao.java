@@ -49,5 +49,12 @@ public interface IBaseDao<T> {
 	 * @return List<T>
 	 */
 	public List<T> findByHQL(String hql, Object... params);
+	
+	/**
+	 * 查询表中所有数据
+	 * @param className
+	 * @return List<T>
+	 */
+	public List<T> getAll(String className);
 
 }

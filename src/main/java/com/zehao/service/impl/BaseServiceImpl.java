@@ -52,4 +52,9 @@ public class BaseServiceImpl<T> implements IBaseService<T> {
 		// TODO Auto-generated method stub
 		return dao.add(entity);
 	}
+
+	public List<T> getAll(String className) {
+		// TODO Auto-generated method stub
+		return dao.getAll(className);
+	}
 }

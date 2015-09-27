@@ -75,4 +75,9 @@ public class BaseDaoImpl<T> implements IBaseDao<T> {
 		// TODO Auto-generated method stub
 		return this.getSession().save(entity);
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<T> getAll(String className){
+		return this.getSession().createQuery("From " + className).list();
+	}
 }
